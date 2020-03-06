@@ -1,12 +1,12 @@
 const cacheName = 'white-tomato';
 const staticAssets = [
-    '/white-tomato',
-    '/white-tomato/index.html',
-    '/white-tomato/js/app.js',
-    '/white-tomato/js/noise.js',
-    '/white-tomato/img/icon.png',
-	'/white-tomato/img/favicon32.png',
-    '/white-tomato/css/bootstrap.min.css'
+    './',
+    './index.html',
+    './js/app.js',
+    './js/noise.js',
+    './img/icon.png',
+	'./img/favicon32.png',
+    './css/bootstrap.min.css'
 ];
 
 self.addEventListener('install', (event) => {
