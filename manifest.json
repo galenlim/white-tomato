@@ -1,7 +1,7 @@
 {
   "name": "White Tomato",
   "short_name": "White Tomato",
-  "start_url": "/index.html",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#FFFFFF",
   "description": "A minimalist pomodoro timer with white noise",
