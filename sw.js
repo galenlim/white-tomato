@@ -6,7 +6,15 @@ const staticAssets = [
     './js/noise.js',
     './img/icon.png',
 	'./img/favicon32.png',
-    './css/bootstrap.min.css'
+	'./img/apple-icon.png',
+    './css/bootstrap.min.css',
+	'./css/style.css',
+	'./css/solid.css',
+	'./webfonts/fa-solid-900.eot',
+	'./webfonts/fa-solid-900.svg',
+	'./webfonts/fa-solid-900.ttf',
+	'./webfonts/fa-solid-900.woff',
+	'./webfonts/fa-solid-900.woff2',
 ];
 
 self.addEventListener('install', (event) => {
