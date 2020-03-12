@@ -1,0 +1,14 @@
+.container {
+    height: 80vh;
+	padding-top: 15px;
+    overflow: no;
+}
+
+i {
+	padding-left: 10px;
+	font-style: normal;
+}
+
+a:hover {
+	text-decoration: none;
+}
