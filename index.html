@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html class="h-100">
+<html>
     <head>
         <title>White Tomato</title>
 		 <!-- Required meta tags -->
@@ -7,26 +7,43 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	    <!-- Bootstrap CSS -->
 	    <link rel="stylesheet" href="css/bootstrap.min.css">
+	    <link rel="stylesheet" href="css/style.css">
 		<!-- PWA -->
 	    <link rel="apple-touch-icon" href="/img/apple-icon.png">
 	    <link rel='icon' href='/img/favicon32.png'>
 	    <meta name="theme-color" content="#FFFFFF"/>
 		<link rel="manifest" href="./manifest.json">
     </head>
-    <body class="h-100">
-		<div class="container h-100">
-			<div class="row h-100 justify-content-center align-items-center">
-				<div>
-					<p class="display-1">
-						<span id="minutes">25</span>:<span id="seconds">00</span>
-					</p>
-					<p class="text-center">
-						<button id="start" type="button" class="btn btn-dark" value="25">Start</button>
-					</p>
-					<noscript>
-						Sorry, please enable Javascript.
-					</noscript>
-				</div>
+    <body> 
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">White Tomato</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#">Features</a>
+      <a class="nav-item nav-link" href="#">Pricing</a>
+      <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    </div>
+  </div>
+</nav>
+		<div class="container">
+			<div class="h-100 d-flex justify-content-center align-items-center">
+			<div class="d-flex flex-column">
+  <div class="p-2">
+				<p class="display-1">
+					<span id="minutes">25</span>:<span id="seconds">00</span>
+				</p>
+</div>
+  <div class="p-2 text-center">
+				<button id="start" type="button" class="btn btn-dark" value="25">Start</button>
+				<noscript>
+					Sorry, please enable Javascript.
+				</noscript>
+</div>
+</div>
 			</div>
 		</div>
 		<script src="js/noise.js"></script>
