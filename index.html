@@ -8,45 +8,107 @@
 	    <!-- Bootstrap CSS -->
 	    <link rel="stylesheet" href="css/bootstrap.min.css">
 	    <link rel="stylesheet" href="css/style.css">
+		<!-- Awesome Font -->
+		<link rel="stylesheet" href="css/solid.css">
 		<!-- PWA -->
-	    <link rel="apple-touch-icon" href="/img/apple-icon.png">
-	    <link rel='icon' href='/img/favicon32.png'>
+	    <link rel="apple-touch-icon" href="./img/apple-icon.png">
+	    <link rel='icon' href='./img/favicon32.png'>
 	    <meta name="theme-color" content="#FFFFFF"/>
 		<link rel="manifest" href="./manifest.json">
     </head>
     <body> 
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">White Tomato</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#">Features</a>
-      <a class="nav-item nav-link" href="#">Pricing</a>
-      <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-    </div>
-  </div>
-</nav>
 		<div class="container">
+			<div class="text-right">
+				<a href="#helpModal" data-toggle="modal" class="text-dark">
+					<i style="font-size:24px" class="fas">&#xf128;</i>
+				</a>
+				<a href="#optionsModal" data-toggle="modal" class="text-dark">
+					<i style="font-size:24px" class="fas">&#xf013;</i>
+				</a>
+			</div>
+		    <!-- Help Modal HTML -->
+			<div id="helpModal" class="modal fade" tabindex="-1">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">How To Use</h5>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<div class="modal-body">
+							<p>
+							White Tomato helps you to employ the Pomodoro Technique without overwhelming options.
+							</p>
+							<p class="font-weight-bold">Usage:</p>
+							<ol>
+								<li>Click "Start" to start a 25-minute timer.</li>
+								<li>Focus on your work with the help of the white noise background.</li>
+								<li>Take a break once the white noise stops.</li>
+								<li>Click "Reset", and repeat from Step One.</li>
+							</ol>
+							<p class="font-weight-bold">Tips:</p>
+							<ul>
+								<li>Lower the volume. Aim for the lowest that is still effective for helping you focus.</li>
+								<li>You can choose between white, pink, and brown noise under "Options".</li>
+								<li>Complete a simple physical task during your break, like washing your coffee cup. Your body will thank you for that.</li>
+								<li>Don't spend your time overthinking how to be more productive. All you need is here. Hit "Start" and work.</li>
+							</ul>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		    <!-- Options Modal HTML -->
+			<div id="optionsModal" class="modal fade" tabindex="-1">
+				<div class="modal-dialog modal-dialog-centered modal-sm">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Options</h5>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<div class="modal-body">
+							<form>
+							 <div class="form-group row">
+								<div class="col">
+								<select class="form-control" id="colorNoiseSelect">
+								  <option value="white">White</option>
+								  <option value="pink">Pink</option>
+								  <option value="brown">Brown</option>
+								</select>
+							  </div>
+							  <label class="col col-form-label">Noise</label>
+							</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-dark" data-dismiss="modal" id="save">Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="h-100 d-flex justify-content-center align-items-center">
-			<div class="d-flex flex-column">
-  <div class="p-2">
-				<p class="display-1">
-					<span id="minutes">25</span>:<span id="seconds">00</span>
-				</p>
-</div>
-  <div class="p-2 text-center">
-				<button id="start" type="button" class="btn btn-dark" value="25">Start</button>
-				<noscript>
-					Sorry, please enable Javascript.
-				</noscript>
-</div>
-</div>
+				<div class="d-flex flex-column">
+					<div class="p-2">
+						<p class="display-1">
+							<span id="minutes">25</span>:<span id="seconds">00</span>
+						</p>
+					</div>
+					<div class="p-2 text-center">
+						<button id="start" type="button" class="btn btn-dark" value="25">Start</button>
+						<noscript>
+						Sorry, please enable Javascript.
+						</noscript>
+					</div>
+				</div>
 			</div>
 		</div>
 		<script src="js/noise.js"></script>
 		<script src="js/app.js"></script>
+		<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </body>
 </html>
