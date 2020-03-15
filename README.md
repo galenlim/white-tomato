@@ -6,8 +6,6 @@ A Progressive Web App (PWA) that you can install on your mobile or desktop. It i
 
 My first web app built with the intention of submitting it for CS50's final project.
 
-*In progress...*
-
 ## Credits
 * https://alligator.io/js/building-countdown-timer/
 * https://code-boxx.com/simple-javascript-countdown-timer/
