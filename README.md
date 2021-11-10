@@ -6,7 +6,7 @@ A Progressive Web App (PWA) that you can install on your mobile or desktop. It i
 
 My first web app built with the intention of submitting it for CS50's final project.
 
-[Click here to access the app.](https://galenlim.github.io/white-tomato/]
+[Click here to access the app.](https://galenlim.github.io/white-tomato/)
 
 ## Credits
 * https://alligator.io/js/building-countdown-timer/
